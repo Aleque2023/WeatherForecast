@@ -1,4 +1,4 @@
-<strong><title>WIP</title></strong>
+<strong>WIP</strong>
 
 <h2>Will include the necessary libraries used</h2>
 <ul>pip install requests</ul>
