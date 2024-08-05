@@ -1,13 +1,13 @@
 <strong>WIP</strong>
 
-<h2>Will include the necessary libraries used</h2>
+<h3>Will include the necessary libraries used</h3>
 <ul>pip install requests</ul>
 <ul>pip install beautifulsoup4</ul>
 
-<h2>will be using in the future</h2>
+<h3>will be using in the future</h3>
 <ul>tkinter</ul>
 
-<h2>will also include how to use the program</h2>
+<h3>will also include how to use the program</h3>
 
-<h1>contributor</h1>
+<h2>contributor</h2>
 <ul>Alejandro Quezada</ul>
