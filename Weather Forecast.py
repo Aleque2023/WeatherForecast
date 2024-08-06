@@ -5,7 +5,7 @@ import tkinter as tk
 #a = 0
 #while a < 1:
 try:
-    city = input("Enter a valid city: ")
+    city = input("Enter a valid city: ").title()
     if city.isalpha() == True:
         print
     else:
