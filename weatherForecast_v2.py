@@ -7,16 +7,16 @@ window = Tk()
 window.geometry("400x300")
 
 icon = PhotoImage(file="weatherLogo.png")
-window.iconphoto(True, icon)
-window.title("Current Weather for any US City")
+window.iconphoto(True, icon) #Just adds a picture I made to the icon.
+window.title("Current Weather for any US City") #changes the title of the gui.
     
 def clear():
     entryCity.delete(0, END)
     entryState.delete(0, END)
-    labelEnd.destroy()
+    labelEnd.destroy() #Need to fix error when clearing label when it does not exist yet.
     subBtn['state'] = NORMAL
 
-def getWeather():
+def getWeather(): #This function grabs the information needed and inserts into a label.
         city = entryCity.get()
         state = entryState.get()
         global labelEnd
@@ -53,10 +53,10 @@ def getWeather():
             labelEnd.grid(row=3, column=0, columnspan=2)
             labelEnd.config(text=end)
             
-def caps(event):
+def caps(event): #This makes the State entry box all uppercase.
     v.set(v.get().upper())
 
-def title(event):
+def title(event): #This makes the first character of each word uppercase in the City entry box.
     w.set(w.get().title())
 
 labelCity = Label(window, 
