@@ -16,8 +16,6 @@ def clear():
     labelEnd.destroy()
     subBtn['state'] = NORMAL
 
-    
-    
 def getWeather():
         city = entryCity.get()
         state = entryState.get()
