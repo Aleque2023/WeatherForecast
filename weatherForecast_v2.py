@@ -11,10 +11,13 @@ window.iconphoto(True, icon) #Just adds a picture I made to the icon.
 window.title("Current Weather for any US City") #changes the title of the gui.
     
 def clear():
-    entryCity.delete(0, END)
-    entryState.delete(0, END)
-    labelEnd.destroy() #Need to fix error when clearing label when it does not exist yet.
-    subBtn['state'] = NORMAL
+    try:
+        entryCity.delete(0, END)
+        entryState.delete(0, END)
+        labelEnd.destroy()
+        subBtn['state'] = NORMAL
+    except:
+        print()
 
 def getWeather(): #This function grabs the information needed and inserts into a label.
         city = entryCity.get()
