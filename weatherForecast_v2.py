@@ -50,7 +50,7 @@ def getWeather(): #This function grabs the information needed and inserts into a
                 end = "The current temperature in " + city + ", " + state + " is: " + final
                 subBtn['state'] = DISABLED
             except:
-                end = "The City, or State was incorrect."
+                end = "The City/State was incorrect."
                 subBtn['state'] = DISABLED
             labelEnd = Label(window)
             labelEnd.grid(row=3, column=0, columnspan=2)
